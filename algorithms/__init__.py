@@ -17,7 +17,6 @@ _ALGORITHM_METADATA = {
     ),
     "YAAPT": ("yaapt", "YAAPTPitchAlgorithm", ["AMFM-decompy"]),
     "pYIN": ("pyin", "pYINPitchAlgorithm", ["librosa"]),
-    "BasicPitch": ("basicpitch", "BasicPitchPitchAlgorithm", ["basic-pitch"]),
     "SwiftF0": ("swiftf0", "SwiftF0PitchAlgorithm", ["swift-f0"]),
     "SPICE": (
         "spice",
@@ -27,6 +26,11 @@ _ALGORITHM_METADATA = {
     "RMVPE": (
         "rmvpe",
         "RMVPEPitchAlgorithm",
+        ["torch"],
+    ),
+    "HPARMVPE": (
+        "hpa_rmvpe",
+        "HPARMVPEPitchAlgorithm",
         ["torch"],
     ),
 }
